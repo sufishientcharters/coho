@@ -11,3 +11,13 @@
   from = "/*"
   to = "/404/"
   status = 404
+
+[[plugins]]
+  package = "netlify-plugin-add-instagram"
+  [plugins.inputs]
+    imageFolder = "static/images/instagram"
+    dataFile = "data/instagram.json"
+    feedTTL = 30
+    imageTTL = 1209600   # 2 weeks
+    imageSize = "m"
+    username = "sufishientcharters"
